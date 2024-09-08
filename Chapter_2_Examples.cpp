@@ -1,20 +1,26 @@
-// Chapter_2_Examples.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+//This program calculates different percentages of a salary and 
+// displays the calculated values.
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    const double MONTHLYSALARY = 6000.0;
+    const double PERCENT1 = 5.0, PERCENT2 = 7.0, PERCENT3 = 10.0;
+
+    double contribution1, contribution2, contribution3;
+
+    //Calculate the contributions to the retirement plan for each percentage
+    contribution1 = MONTHLYSALARY * PERCENT1 / 100.0;
+    contribution2 = MONTHLYSALARY * PERCENT2 / 100.0;
+    contribution3 = MONTHLYSALARY * PERCENT3 / 100.0;
+
+    cout << "The amount of contribution to the retirement plan at " << PERCENT1
+        << "% is $" << contribution1 << " ." << endl;
+    cout << "The amount of contribution to the retirement plan at " << PERCENT2
+        << "% is $" << contribution2 << " ." << endl;
+    cout << "The amount of contribution to the retirement plan at " << PERCENT3
+        << "% is $" << contribution3 << " ." << endl;
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
